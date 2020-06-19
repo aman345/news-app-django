@@ -3,7 +3,7 @@ from newsapi import NewsApiClient
 import logging
 
 def index(request):
-    newsapi: NewsApiClient = NewsApiClient(api_key="ee798061241a4b9a8fc4858d996de99d")
+    newsapi: NewsApiClient = NewsApiClient(api_key="YOUR_API_KEY")
     top = newsapi.get_everything(sources="bbc-news",language='en')
     logging.debug("News Returned From", top)
 
